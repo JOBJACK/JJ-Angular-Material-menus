@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { IconService } from './icon.service';
 
 @Component({
@@ -8,4 +9,5 @@ import { IconService } from './icon.service';
 })
 export class AppComponent {
   constructor(private iconService: IconService) {}
+  disableSelect = new FormControl(false);
 }
